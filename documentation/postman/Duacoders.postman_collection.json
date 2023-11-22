@@ -1,0 +1,570 @@
+{
+	"info": {
+		"_postman_id": "e6529470-b8d5-4b29-9e4f-247bbb8e59d2",
+		"name": "Duacoders",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11675405"
+	},
+	"item": [
+		{
+			"name": "Duacoders",
+			"item": [
+				{
+					"name": "Get duacoders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/duacoders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"duacoders"
+							],
+							"query": [
+								{
+									"key": "limit",
+									"value": "7",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								},
+								{
+									"key": "orderby",
+									"value": "name:ASC",
+									"disabled": true
+								},
+								{
+									"key": "nif",
+									"value": "11111111A",
+									"disabled": true
+								},
+								{
+									"key": "department",
+									"value": "Gestion",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update duacoder",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nif\": \"11111113A\",\n    \"name\": \"Miguel2\",\n    \"skills\": [\"guapo\", \"rico\"],\n    \"tortillaOnion\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/duacoders/0ea96356-1cba-4481-91b6-d404f617dc6d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"duacoders",
+								"0ea96356-1cba-4481-91b6-d404f617dc6d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get duacoder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/duacoders/dd884e38-60b4-4de3-8022-b2cb31c093f1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"duacoders",
+								"dd884e38-60b4-4de3-8022-b2cb31c093f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete duacoder",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/duacoders/dd884e38-60b4-4de3-8022-b2cb31c093f1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"duacoders",
+								"dd884e38-60b4-4de3-8022-b2cb31c093f1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create duacoders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nif\": \"55555555Z\",\n    \"name\": \"John Doe\",\n    \"skills\": [\"bueno\", \"amable\"],\n    \"tortillaOnion\": false,\n    \"department\": 1,\n    \"img\": \"http://localhost:3000/files/images/e1c2e6fc-ba90-4cbe-8274-d92a963ba188.png\",\n    \"bio\": \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.\",\n    \"position\": \"developer\",\n    \"date\": \"1994-09-29\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/duacoders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"duacoders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Export to csv",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/export-files/duacoders-csv?name=Miguel1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"export-files",
+								"duacoders-csv"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Miguel1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Department",
+			"item": [
+				{
+					"name": "Get Departments",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Gestion",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "5",
+									"disabled": true
+								},
+								{
+									"key": "page",
+									"value": "2",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/departments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Gestion\",\n    \"description\": \"departamento de gestion\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/departments",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Department",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Desarrollo\",\n    \"description\": \"departamento de desarrollo\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/departments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Department",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/departments/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"departments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"miguel@mail.com\",\n    \"password\": \"Abcd123.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"miguel@mail.com\",\n    \"password\": \"Abcd123.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Files",
+			"item": [
+				{
+					"name": "Upload image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/home/muras/Descargas/noimage.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/files/images",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"files",
+								"images"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get image",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVlYWY4MTZkLWY2OGItNGZkNS05Nzc3LWY0MDU1MDU0YWRiNyIsImlhdCI6MTcwMDU2MTcxNCwiZXhwIjoxNzAwNjQ4MTE0fQ.MeupY9l7DmAR2GyelqCjmD_nqoJsL0YEhhe9_95MG5Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/files/images/e1c2e6fc-ba90-4cbe-8274-d92a963ba188.png",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"files",
+								"images",
+								"e1c2e6fc-ba90-4cbe-8274-d92a963ba188.png"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Swagger API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
